@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            /*
+             * ECAL Media & Interaction Design
+             */
+        -->
+        <meta charset="utf-8" />
+        <meta name="author" content="ECAL / Ecole Cantonale d'Art de Lausanne" />
+        <meta name="description" content="Website of the Media &amp; Interaction Design Bachelor, featuring a selection of interactive projects and a list of alumni students" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />
+
+        <meta property="og:url" content="http://ecal-mid.ch" />
+        <meta property="og:site_name" content="ECAL Media &amp; Interaction Design" />
+        <meta property="og:description" content="Website of the Media &amp; Interaction Design Bachelor, featuring a selection of interactive projects and a list of alumni students" />
+        <meta property="og:image" content="imgs/social.jpg" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="http://ecal-mid.ch">
+        <meta name="twitter:title" content="ECAL Media &amp; Interaction Design">
+        <meta name="twitter:description" content="Website of the Media &amp; Interaction Design Bachelor, featuring a selection of interactive projects and a list of alumni students">
+        <meta name="twitter:image" content="imgs/social.jpg">
+
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="fonts/import.css" />
+        <link rel="stylesheet" type="text/css" href="css/screen.css" />
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <title>ECAL – Media &amp; Interaction Design</title>
+    </head>
+    <body>
+        <section id="intro">
+            <div id="intro-sketch" class="">
+                <a href="https://github.com/ecal-mid/site-ecal-mid/tree/master/js/sketches" target="_blank">Source code</a>
+                <canvas id="intro-sketch-canvas"></canvas>
+            </div>
+            <header>
+                <a href="./" id="closeIntro">ECAL <span class="title">Media &amp; Interaction Design</span></a>
+                <nav>
+                    <a href="./" id="gotoProjects" class="active">PROJECTS</a>
+                    <a href="./" id="gotoAbout">ABOUT</a>
+                    <!-- <a href="#">ALUMNIS</a>
+                    <a href="#">RESOURCES</a> -->
+                    <div id="social">
+                        <a href="https://github.com/ecal-mid"><img src="assets/icons/github.svg"></a>
+                        <a href="https://www.instagram.com/ecal_mid"><img src="assets/icons/instagram.svg"></a>
+                        <a href="https://twitter.com/ecal_mid"><img src="assets/icons/twitter.svg"></a>
+                        <a href="https://vimeo.com/channels/ecalmid"><img src="assets/icons/vimeo.svg"></a>
+                    </div>
+                </nav>
+            </header>
+        </section>
+
+        <section id="projects">
+            <div class="cache"></div>
+            <div id="filter">
+                <p id="filter-sentence">
+                    Show projects from <a class="select" data-filter="from"></a> to <a class="select" data-filter="to"></a><span class="type"> of type <a class="select" data-filter="type"></a></span>
+                </p>
+                <div class="options" data-filter="from">
+                    <div class="option">2014</div><br>
+                    <div class="option">2015</div><br>
+                    <div class="option">2016</div><br>
+                    <div class="option">2017</div><br>
+                    <div class="option">2018</div><br>
+                    <!-- <div class="option">2017</div><br> -->
+                    <div class="option">now</div>
+                </div>
+                <div class="options" data-filter="to">
+                    <div class="option">now</div><br>
+                    <!-- <div class="option">2017</div><br> -->
+                    <div class="option">2018</div><br>
+                    <div class="option">2017</div><br>
+                    <div class="option">2016</div><br>
+                    <div class="option">2015</div><br>
+                    <div class="option">2014</div><br>
+                </div>
+                <div class="options" data-filter="type">
+                    <div class="option">all</div><br>
+                    <div class="option">3d graphics</div><br>
+                    <div class="option">creative coding</div><br>
+                    <div class="option">dynamic display</div><br>
+                    <div class="option">games</div><br>
+                    <div class="option">summer university</div><br>
+                    <div class="option">workshop</div><br>
+                </div>
+            </div>
+            <article id="previews">
+
+              <a href="/projects/2017/hhmmss" target="_blank" class="preview" data-year="2017" data-type="dynamic display">
+                  <div class="background" style="background-image: url('assets/thumbnails/hhmmss.jpg')"></div>
+                  <div class="title">
+                      HHMMSS<br/>Semester project with Angelo Benedetto
+                      <div class="infos">
+                          2015-2017, Dynamic Display, 1CVmid
+                      </div>
+                  </div>
+              </a>
+
+
+              <a href="/projects/2017/mario" target="_blank" class="preview" data-year="2017" data-type="workshop">
+                  <div class="background" style="background-image: url('assets/thumbnails/mario2017.jpg')"></div>
+                  <div class="title">
+                      Satisfaction<br/>Workshop with Mario von Rickenbach
+                      <div class="infos">
+                          2017, workshop, 1CVmid
+                      </div>
+                  </div>
+              </a>
+
+
+
+              <a href="/projects/2017/juerg-lehni" target="_blank" class="preview" data-year="2017" data-type="workshop">
+                  <div class="background" style="background-image: url('assets/thumbnails/workshop-jurg-lehni.jpg')"></div>
+                  <div class="title">
+                      Workshop<br/>with Jürg Lehni
+                      <div class="infos">
+                          2017, Creative Coding, Workshop, 1CVmid
+                      </div>
+                  </div>
+              </a>
+
+
+
+                <a href="/projects/2017/appstore" target="_blank" class="preview" data-year="2017" data-type="games">
+                    <div class="background" style="background-image: url('assets/thumbnails/appstore_2017.jpg')"></div>
+                    <div class="title">
+                        iPad Games<br>
+                        <div class="infos">
+                            2017, Advanced Interaction, 3CVmid
+                        </div>
+                    </div>
+                </a>
+                <a href="/projects/2017/creative-coding" target="_blank" class="preview" data-year="2017" data-type="creative coding">
+                    <div class="background" style="background-image: url('assets/thumbnails/coded_quote.jpg')"></div>
+                    <div class="title">
+                        Coded Quote<br>
+                        <div class="infos">
+                            2017, Creative Coding, 1CVmid
+                        </div>
+                    </div>
+                </a>
+                <a href="/projects/2017/3d-graphics" target="_blank" class="preview" data-year="2016" data-type="3d graphics">
+                    <div class="background" style="background-image: url('assets/thumbnails/subjectif_gif.jpg')"></div>
+                    <div class="title">
+                        Subjectif Gif<br>
+                        <div class="infos">
+                            2016, 3D Graphics, 1CVmid
+                        </div>
+                    </div>
+                </a>
+                <a href="/projects/2016/foood-online" target="_blank" class="preview" data-year="2016" data-type="workshop">
+                    <div class="background" style="background-image: url('assets/thumbnails/foood_online.jpg')"></div>
+                    <div class="title">
+                        Foood.online<br>
+                        with Mario Von Rickenbach
+                        <div class="infos">
+                            2016, Workshop, 1CVmid
+                        </div>
+                    </div>
+                </a>
+                <a href="/projects/2016/custom-records" target="_blank" class="preview" data-year="2016" data-type="dynamic display">
+                    <div class="background" style="background-image: url('assets/thumbnails/custom_records.jpg')"></div>
+                    <div class="title">
+                        Custom Records
+                        <div class="infos">
+                            2016, Dynamic Display, 1CVmid
+                        </div>
+                    </div>
+                </a>
+                <a href="/projects/2016/swiss-datas" target="_blank" class="preview" data-year="2016" data-type="summer university">
+                    <div class="background" style="background-image: url('assets/thumbnails/swiss_datas.jpg')"></div>
+                    <div class="title">
+                        Swiss Datas
+                        <div class="infos">
+                            2016, Summer University, 3CVmid
+                        </div>
+                    </div>
+                </a>
+                <a href="/projects/2016/appstore" target="_blank" class="preview" data-year="2016" data-type="games">
+                    <div class="background" style="background-image: url('assets/thumbnails/appstore_2016.jpg')"></div>
+                    <div class="title">
+                        iPad Games<br>
+                        <div class="infos">
+                            2016, Advanced Interaction, 3CVmid
+                        </div>
+                    </div>
+                </a>
+                <a href="/projects/2015/pocket-experiments" target="_blank" class="preview" data-year="2015" data-type="workshop">
+                    <div class="background" style="background-image: url('assets/thumbnails/pocket_experiments.jpg')"></div>
+                    <div class="title">
+                        Pocket Experiments<br>
+                        with Hannah Perner-Wilson
+                        <div class="infos">
+                            2015, Workshop, 2CVmid
+                        </div>
+                    </div>
+                </a>
+                <a href="/projects/2015/gifwall" target="_blank" class="preview" data-year="2015" data-type="dynamic display">
+                    <div class="background" style="background-image: url('assets/thumbnails/gif_wall.jpg')"></div>
+                    <div class="title">
+                        Gifwall<br>
+                        <div class="infos">
+                            2015, Dynamic Display, 1CVmid
+                        </div>
+                    </div>
+                </a>
+                <a href="/projects/2014/beijing-connection" target="_blank" class="preview" data-year="2014" data-type="summer university">
+                    <div class="background" style="background-image: url('assets/thumbnails/beijing_connection.jpg')"></div>
+                    <div class="title">
+                        Beijing Connection
+                        <div class="infos">
+                            2014, Summer University, 2CVmid
+                        </div>
+                    </div>
+                </a>
+                <!-- <a href="https://vimeo.com/channels/ecalmid" target="_blank" class="preview vimeo" data-year="-1" data-type="all">
+                    <div class="background" style="background-image: url('assets/thumbnails/vimeo.jpg')"></div>
+                    <div class="title">
+                        More projects on Vimeo
+                        <div class="infos">
+                            Since 2008
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/ecal-mid" target="_blank" class="preview github" data-year="-1" data-type="all">
+                    <div class="background" style="background-image: url('assets/thumbnails/github.jpg')"></div>
+                    <div class="title">
+                        Source codes on Github
+                        <div class="infos">
+                            Since 2017
+                        </div>
+                    </div>
+                </a> -->
+            </article>
+        </section>
+
+        <section id="about">
+            <div class="cache"></div>
+            <div>
+                <div>
+                    <p>
+                        Successfully bridging several disciplines around current communication, this training is designed for students with a solid visual culture eager to find out more about advanced technology. Prospective, pragmatic and experimental, this Bachelor course is provided in the framework of the Visual Communication Department, which concurrently offers crossover courses and projects enabling students to acquire multidisciplinary skills (photography, graphic design, film).
+                    </p>
+                    <p>
+                        Through courses and workshops provided by major actors on the international scene, the students become seasoned in the various fields of this discipline – art direction, interaction design, interactive applications (web and mobile), installations, motion design, as well as communication and digital identity. Involvement in exhibitions, publications or assignments commissioned by institutions provides an actual immersion into the labour world. The students also benefit from a wide range of theoretical courses and multidisciplinary conferences on the ECAL premises.
+                    </p>
+                    <p>
+                        The skills and projects acquired throughout the curriculum serve to produce a portfolio in line with the highest standards. From website design to event management, via animation or modelling, this training offers a wide range of professional opportunities.
+                    </p>
+                </div>
+                <div>
+                    <div>
+                        <p>
+                            <span>Head Visual Communication</span><br>
+                            Vincent Jacquier
+                        </p>
+                        <p>
+                            <span>Head Media &amp; Interaction Design</span><br>
+                            Cyril Diagne
+                        </p>
+                        <p>
+                            <span>Professors</span><br>
+                            Alain Bellet<br>
+                            Angelo Benedetto<br>
+                            Cyril Diagne<br>
+                            Christophe Guignard<br>
+                            Gaël Hugo, Paris<br>
+                            Patrick Keller
+                        </p>
+                        <p>
+                            <span>Lecturers</span><br>
+                            Sami Benhadj<br>
+                            Gavrilo Bozovic<br>
+                            Andreas Gysin, Lugano<br>
+                            Nicolas Nova<br>
+                            Florian Pittet<br>
+                            Yann Riggenberg<br>
+                            Pauline Saglio<br>
+                            Lionel Tardy<br>
+                            Mario Von Rickenbach
+                        </p>
+                        <p>
+                            <span>Visiting Lecturers</span><br>
+                            Jussi Ängeslevä, Berlin<br>
+                            Thomas Eberwein, Londres<br>
+                            Julien Gachadoat, Bordeaux<br>
+                            Dev Joshi, Londres<br>
+                            Mario Klingemann, Munich<br>
+                            Marc Kremers, Londres<br>
+                            Pe Lang, Berlin<br>
+                            Jürg Lehni, Los Angeles<br>
+                            Marc McKeague, Londres<br>
+                            Megaforce, Paris<br>
+                            Hannah Perner-Wilson, Berlin<br>
+                            Jonathan Puckey, Amsterdam<br>
+                            Niklas Roy, Berlin<br>
+                            Stewart Smith, New York<br>
+                            Yuri Suzuki, Londres<br>
+                            Marcus Wendt, Londres<br>
+                            Roel Wouters, Amsterdam
+                        </p>
+                        <p>
+                            <span>Assistants</span><br>
+                            Pietro Alberti<br>
+                            Marc Dubois<br>
+                            Laura Perrenoud<br>
+                            Tibor Udvari
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            <span>Applications</span><br>
+                            The online registration for the Bachelor Media &amp; Interaction Design are opened until the 27th of April 2017. <a href="http://ecal.ch/en/2043/studies/admission/online-registration" target="_blank">Online registration</a>.
+                        </p>
+                        <p>
+                            <span>Fees per year</span><br>
+                            CHF 1925.–<br>
+                            Consisting of:<br>
+                            <span class="fixedWidth">CHF 150.–</span> Enrollment fee<br>
+                            <span class="fixedWidth">CHF 25.–</span> Complementary accident insurance<br>
+                            <span class="fixedWidth">CHF 1000.–</span> Course fee<br>
+                            <span class="fixedWidth">CHF 750.–</span> Materials fee
+                        </p>
+                        <p>
+                            <span>Social</span><br>
+                            <a href="https://www.github.com/ecal-mid" target="_blank">Github</a><br>
+                            <a href="https://www.instagram.com/ecal_mid" target="_blank">Instagram</a><br>
+                            <a href="https://twitter.com/ecal_mid" target="_blank">Twitter</a><br>
+                            <a href="https://vimeo.com/channels/ecalmid" target="_blank">Vimeo</a>
+                        </p>
+                        <p>
+                            <span>Contact</span><br>
+                            ECAL/Ecole cantonale d’art de Lausanne<br>
+                            <a href="https://goo.gl/maps/y1CHB2rbb5p" target="_blank">5, avenue du Temple, Renens VD</a><br>
+                            Case postale 555<br>
+                            CH-1001 Lausanne<br>
+                            Switzerland<br>
+                            <br>
+                            <a href="tel:0041213169933" target="_blank">+41 (0)21 316 99 33</a><br>
+                            <a href="http://www.ecal.ch/" target="_blank">www.ecal.ch</a><br>
+                            <a href="mailto:ecal@ecal.ch" target="_blank">ecal@ecal.ch</a><br>
+                            <br>
+                            <a href="http://www.ecal.ch/" target="_blank"><img src="assets/ecal_logo.svg" height="30"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/isotope.min.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/filter.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/sketches/01-Romain/sketch.js"></script>
+        <script>
+            pause();
+        </script>
+    </body>
+</html>
